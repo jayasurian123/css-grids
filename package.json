@@ -1,0 +1,27 @@
+{
+  "name": "css-grids",
+  "version": "1.0.0",
+  "description": "Learn CSS grids with examples",
+  "main": "index.js",
+  "scripts": {
+    "start": "browser-sync start --server --files index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jayasurian123/css-grids.git"
+  },
+  "keywords": [
+    "css",
+    "grid"
+  ],
+  "author": "Jayasurian Makkoth",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/jayasurian123/css-grids/issues"
+  },
+  "homepage": "https://github.com/jayasurian123/css-grids#readme",
+  "dependencies": {
+    "browser-sync": "^2.23.6"
+  }
+}
