@@ -1,0 +1,34 @@
+:root {
+  --orange: #f46b45;
+  --black: #272727;
+  --white: floralwhite;
+  --yellow: #fdc70c;
+}
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+ul, li  {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-image: linear-gradient(#304352, #d7d2cc);
+  min-height: calc(100vh - 50px);
+  position: relative;
+  margin: 20px;
+  color: white;
+  font-family: -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial;
+}
+

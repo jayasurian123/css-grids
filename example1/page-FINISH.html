@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>CSS grid - Example 1</title>
+  <link rel="stylesheet" href="./main.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 5px;
+  }
+
+  .navbar {
+    display: grid;
+    grid-template-columns: 4fr 2fr;
+    grid-gap: 5px;
+  }
+
+  .navbar__header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 31px;
+    font-size: 34px;
+    text-transform: uppercase;
+    background: var(--orange);
+  }
+
+  .navbar__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 5px;
+  }
+
+  .navbar__list-item {
+    padding: 5px;
+    background: var(--orange);
+    text-transform: uppercase;
+  }
+
+  .navbar__list-item--last {
+    grid-area: 1 / 2 / span 3 / span 1;
+    display: flex;
+    /* any other way to make the centent center? */
+    align-items: center;
+    justify-content: center;
+  }
+
+  ul {
+    list-style-type: none;
+  }
+
+  .section1 {
+    display: grid;
+    grid-template-columns: 2fr 4fr;
+    grid-gap: 5px;
+  }
+
+  .description {
+    background: var(--orange);
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .call-to-action {
+    background: var(--orange);
+    padding: 5px;
+  }
+
+  .call-to-action button {
+    background: var(--white);
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    cursor: pointer;
+  }
+
+
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <nav class="navbar">
+      <h1 class="navbar__header">grids</h1>
+      <ul class="navbar__list">
+        <li class="navbar__list-item">features</li>
+        <li class="navbar__list-item">services</li>
+        <li class="navbar__list-item">prices</li>
+        <li class="navbar__list-item navbar__list-item--last">contact</li>
+      </ul>
+    </nav>
+    <section class="section1">
+      <div class="description">
+        <h2>A grid theme!</h2>
+        <p>Bootstrap theme</p>
+      </div>
+      <div class="call-to-action">
+        <button>This is a button</button>
+      </div>
+    </section>
+
+    <section class="section2">
+
+      <div class="features">
+        <div class="features__item">
+          <h3 class="features__item-header">Responsive</h3>
+          <p class="features__item-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, possimus voluptatibus</p>
+          <button class="features__item-button">Read More</button>
+        </div>
+
+        <div class="features__item">
+          <h3 class="features__item-header">Built with Grid</h3>
+          <p class="features__item-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, possimus voluptatibus</p>
+          <button class="features__item-button">Read More</button>
+        </div>
+      </div>
+      <div class="technologies">
+        <div class="technologies__header">There are features</div>
+
+        <div class="technologies__item">
+          <h3 class="technologies__item-header">Built with Grid</h3>
+          <p class="technologies__item-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, possimus voluptatibus</p>
+          <button class="technologies__item-button">Read More</button>
+        </div>
+        <div class="technologies__item">
+          <h3 class="technologies__item-header">Built with Grid</h3>
+          <p class="technologies__item-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, possimus voluptatibus</p>
+          <button class="technologies__item-button">Read More</button>
+        </div>
+
+      </div>
+    </section>
+  </div>
+</body>
+
+</html>
